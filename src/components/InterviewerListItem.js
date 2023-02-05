@@ -5,21 +5,21 @@ import classNames from "classnames";
 
 export default function InterviewerListItem(props) {
 
-  let dayClass = "interviewers__item";
+  let interviewerClass = "interviewers__item";
 
   if (props.selected) {
-    dayClass += "--selected";
+    interviewerClass += "--selected";
   }
 
 
   return (
-    <li onClick={() => props.setInterviewer(props.id)} className={dayClass}>
+    <li onClick={props.setInterviewer} className={interviewerClass}>
       <img
         className="interviewers__item-image"
         src={props.avatar}
         alt={props.name}
       />
-      {props.name}
+      {props.selected && props.name}
     </li>
   );
 }
