@@ -1,5 +1,4 @@
 import React from "react";
-
 import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import "index.scss";
@@ -12,6 +11,9 @@ import Appointment from "components/Appointment/index.js";
 import Header from "components/Appointment/Header.js";
 import Empty from "components/Appointment/Empty.js";
 import Show from "components/Appointment/Show.js";
+import Confirm from "components/Appointment/Confirm";
+import Status from "components/Appointment/Status";
+import Error from "components/Appointment/Error";
 
 storiesOf("Button", module)
   .addParameters({
@@ -159,3 +161,21 @@ storiesOf("Appointment", module)
     onDelete={action('onDelete')} 
     />
   ))
+  .add("Confirm", () => (
+    <Confirm 
+    message={"Delete the appointment"}
+    onConfirm={action("onConfirm")}
+    onCancel={action("onCancel")} 
+    />
+  ))
+  .add("Status", () => (
+    <Status 
+    message={"Deleting"} 
+    />
+  ))
+  .add("Error", () => (
+    <Error 
+    onClose={action("onClose")} 
+    message={"Could not delete appointment"} 
+    />
+  ));
