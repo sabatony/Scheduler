@@ -55,7 +55,7 @@ export default function useApplicationData() {
     let day = {
       ...state.days[dayOfWeek],
       spots: state.days[dayOfWeek]
-    };
+    }
 
     if (!state.appointments[id].interview) {
       day = {
@@ -65,7 +65,7 @@ export default function useApplicationData() {
     } else {
       day = {
         ...state.days[dayOfWeek],
-        spots: state.days[dayOfWeek.spots]
+        spots: state.days[dayOfWeek].spots
       };
     }
 
