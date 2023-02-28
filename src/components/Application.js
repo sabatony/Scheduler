@@ -145,7 +145,6 @@ export default function Application(props) {
       </section>
       <section className="schedule">
         {dailyAppointments.map(appointment => {
-          console.log(appointment)
 
           const interview = getInterview(state, appointment.interview);
           const interviewers = getInterviewersForDay(state, state.day);
