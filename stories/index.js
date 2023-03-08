@@ -156,44 +156,44 @@ storiesOf("Appointment", module)
   ))
   .add("Show", () => (
     <Show
-    student={"Lydia Miller-Jones"}
-    interviewer={interviewer}
-    onEdit={action("onEdit")}
-    onDelete={action('onDelete')} 
+      student={"Lydia Miller-Jones"}
+      interviewer={interviewer}
+      onEdit={action("onEdit")}
+      onDelete={action('onDelete')}
     />
   ))
   .add("Confirm", () => (
-    <Confirm 
-    message={"Delete the appointment"}
-    onConfirm={action("onConfirm")}
-    onCancel={action("onCancel")} 
+    <Confirm
+      message={"Delete the appointment"}
+      onConfirm={action("onConfirm")}
+      onCancel={action("onCancel")}
     />
   ))
   .add("Status", () => (
-    <Status 
-    message={"Deleting"} 
+    <Status
+      message={"Deleting"}
     />
   ))
   .add("Error", () => (
-    <Error 
-    onClose={action("onClose")} 
-    message={"Could not delete appointment"} 
+    <Error
+      onClose={action("onClose")}
+      message={"Could not delete appointment"}
     />
   ))
   .add("Edit", () => (
-    <Form 
-    onCancel={action("onCancel")} 
-    onSave={action("onSave")} 
-    interviewers={interviewers} 
-    interviewer={3} 
-    student={"Sabastian Omeasoo"} 
+    <Form
+      onCancel={action("onCancel")}
+      onSave={action("onSave")}
+      interviewers={interviewers}
+      interviewer={3}
+      student={"Sabastian Omeasoo"}
     />
   ))
   .add("Create", () => (
-    <Form 
-    onCancel={action("onCancel")} 
-    onSave={action("onSave")} 
-    interviewers={interviewers} 
+    <Form
+      onCancel={action("onCancel")}
+      onSave={action("onSave")}
+      interviewers={interviewers}
     />
   ))
   .add("Appointment Booked", () => (
@@ -211,4 +211,4 @@ storiesOf("Appointment", module)
       <Appointment id={1} time="4pm" />
       <Appointment time="5pm" />
     </Fragment>
-  ))
+  ));

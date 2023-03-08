@@ -49,8 +49,6 @@ export default function Appointment(props) {
     transition(CONFIRM);
   };
 
-
-
   return (
     <article className="appointment" data-testid="appointment">
       <Header
