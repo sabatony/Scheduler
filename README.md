@@ -32,5 +32,8 @@ npm run storybook
 ```
 
 ## Screenshots 
+![appointments for the day](https://user-images.githubusercontent.com/95886597/223597278-44432527-c5af-459b-888a-7d5aede57177.png)
+![booking an appointment](https://user-images.githubusercontent.com/95886597/223597920-3a423cf4-19d5-4e75-bf4c-528965d733ec.png)
+![deleting appointment](https://user-images.githubusercontent.com/95886597/223598064-3d27d743-29e7-4966-b373-8b92d544e3af.png)
 
 
