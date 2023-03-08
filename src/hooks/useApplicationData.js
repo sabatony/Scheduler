@@ -55,7 +55,7 @@ export default function useApplicationData() {
     let day = {
       ...state.days[dayOfWeek],
       spots: state.days[dayOfWeek]
-    }
+    };
 
     if (!state.appointments[id].interview) {
       day = {
@@ -69,7 +69,7 @@ export default function useApplicationData() {
       };
     }
 
-    let days = state.days
+    let days = state.days;
     days[dayOfWeek] = day;
 
 
@@ -91,14 +91,14 @@ export default function useApplicationData() {
       [id]: appointment
     };
 
-    const dayOfWeek = findDay(state.day)
+    const dayOfWeek = findDay(state.day);
 
     const day = {
       ...state.days[dayOfWeek],
       spots: state.days[dayOfWeek].spots + 1
-    }
+    };
 
-    let days = state.days
+    let days = state.days;
     days[dayOfWeek] = day;
 
     return axios

@@ -147,6 +147,7 @@ describe("Application", () => {
     const appointment = getAllByTestId(container, "appointment").find(
       appointment => queryByText(appointment, "Archie Cohen")
     );
+    
     fireEvent.click(queryByAltText(appointment, "Delete"))
   
     expect(getByText(appointment, "Are you sure you want to delete?")).toBeInTheDocument();
